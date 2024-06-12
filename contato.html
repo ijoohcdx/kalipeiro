@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalipeiro - Contato</title>
+    <style>
+        body {
+            font-family: "Courier New", Monospace;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+        }
+        header h1 {
+            color: #ff0; /* Amarelo */
+        }
+        header h2 {
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #777;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #ff0; /* Amarelo */
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ffa500; /* Amarelo mais escuro */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kalipeiro</h1>
+        <h2>Contato</h2>
+    </header>
+    <div class="container">
+        <p>Preencha o formulário abaixo para entrar em contato conosco:</p>
+        <form action="mailto:kalipeiro@outlook.com" method="post" enctype="text/plain">
+            <input type="text" name="assunto" placeholder="Assunto">
+            <input type="text" name="email" placeholder="Seu Email">
+            <textarea name="corpo" rows="5" placeholder="Digite sua mensagem aqui"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Ou envie um email diretamente para <a href="mailto:kalipeiro@outlook.com?subject=Contato%20-%20Suporte">kalipeiro@outlook.com</a> com o assunto "Contato - Suporte" para questões de suporte.</p>
+    </div>
+    <footer>
+        <p>Contato: kalipeiro@outlook.com</p>
+    </footer>
+</body>
+</html>
