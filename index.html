@@ -1,36 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Kalipeiro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalipeiro - Home</title>
     <style>
         body {
+            font-family: "Courier New", Monospace;
             background-color: #333;
-            color: white;
-            font-family: 'Courier New', Monospace;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
             text-align: center;
+            padding: 20px;
+            background-color: #333;
         }
-        .title {
-            color: yellow;
+        header h1 {
+            color: #ff0; /* Amarelo */
+            font-size: 36px;
+            margin-bottom: 10px;
         }
-        .menu a {
-            color: white;
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px;
         }
-        .menu {
-            margin: 20px 0;
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            margin-top: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <h1 class="title">Kalipeiro</h1>
-    <h2>Soluções | Carreira | Contato | Crowdfunding</h2>
-    <div class="menu">
-        <a href="solucoes.html">Soluções</a> | 
-        <a href="carreira.html">Carreira</a> | 
-        <a href="contato.html">Contato</a> |
-        <a href="crowdfunding.html">Crowdfunding</a>
+    <header>
+        <h1>Kalipeiro</h1>
+        <nav>
+            <a href="solucoes.html">Soluções</a> |
+            <a href="carreira.html">Carreira</a> |
+            <a href="contato.html">Contato</a> |
+            <a href="crowdfunding.html">Crowdfunding</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="subtitle">Soluções Inovadoras em Mídia</div>
+        <p>Bem-vindo à Kalipeiro! Somos uma empresa dedicada a criar soluções inovadoras em mídia para atender às necessidades de nossos clientes. Explore nossos serviços e descubra como podemos ajudar você a alcançar seus objetivos de negócios.</p>
+        <p>Estamos também iniciando uma campanha de crowdfunding para transformar nossa visão em realidade. Saiba mais sobre como você pode nos apoiar em nossa <a href="crowdfunding.html">página de crowdfunding</a>.</p>
     </div>
+    <footer class="footer">
+        <p>&copy; 2024 Kalipeiro. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
