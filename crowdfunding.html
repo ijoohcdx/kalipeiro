@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalipeiro Crowdfunding</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: 'Courier New', Monospace;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: yellow;
+        }
+        h2, h3 {
+            color: red;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .cta-button {
+            margin: 20px 0;
+        }
+        #paypal-container-65QLCL88GY926 {
+            display: inline-block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kalipeiro</h1>
+    <h2>Crowdfunding - Transformando Visões em Realidade</h2>
+    <div class="content">
+        <p>Bem-vindo ao futuro da mídia integrada! A Kalipeiro está prestes a revolucionar o mercado com soluções inovadoras e de ponta. Este é um convite para fazer parte de algo grandioso.</p>
+        
+        <p>Estamos construindo um estúdio de mídia "state of the art" que oferecerá serviços de design, produção, impressão, fotografia, vídeo e desenvolvimento de aplicativos. Nossa missão é transformar ideias em realidade, uma de cada vez.</p>
+        
+        <p>Imagine ser parte do início de um monopólio que define os padrões da indústria. Com sua ajuda, poderemos acelerar nossos planos, adquirir os melhores equipamentos, atrair os melhores talentos e fornecer serviços inigualáveis.</p>
+        
+        <p>Junte-se a nós nesta jornada transformadora! Faça uma doação para nos ajudar a alcançar nossas metas e, juntos, criaremos um futuro brilhante. Qualquer contribuição faz uma diferença significativa.</p>
+        <div class="cta-button" id="paypal-container-65QLCL88GY926"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=BAA8mcfCoCjqCs6RIzVydLW0o8FVGn1xa-waGu0TwGyz_ssvCfbAQbTc-Nz5m8qwcW3NU8vvKz7BKAvJak&components=hosted-buttons&disable-funding=venmo&currency=BRL"></script>
+        <script>
+            paypal.HostedButtons({
+                hostedButtonId: "65QLCL88GY926",
+            }).render("#paypal-container-65QLCL88GY926");
+        </script>
+    </div>
+</body>
+</html>
