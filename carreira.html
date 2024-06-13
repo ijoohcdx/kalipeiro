@@ -19,264 +19,95 @@
         }
         header h1 {
             color: #ff0; /* Amarelo */
+            font-size: 36px;
+            margin-bottom: 10px;
         }
-        header h2 {
-            color: #fff;
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 10px 0;
-            cursor: pointer;
-            color: #fff;
-        }
-        nav ul ul {
-            display: none;
-            margin-left: 20px;
-        }
-        nav ul ul li:before {
-            content: "├── ";
-        }
-        a {
+        nav a {
             color: #fff;
             text-decoration: none;
+            margin: 0 10px;
         }
-        a:hover {
+        nav a:hover {
             text-decoration: underline;
         }
-        footer {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .footer {
             text-align: center;
             padding: 20px;
             background-color: #333;
             margin-top: 20px;
+            font-size: 14px;
         }
-        .expandable:before, .position-expandable:before {
-            content: ">";
-            margin-right: 5px;
+        .category {
+            color: #ff0000; /* Vermelho */
+            font-weight: bold;
+            margin-top: 20px;
         }
-        .expanded:before {
-            content: "v";
-            margin-right: 5px;
+        .job {
+            margin-left: 20px;
         }
-        .description {
-            display: none;
-            margin-left: 40px;
+        .email-link {
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Kalipeiro</h1>
-        <h2>Carreira</h2>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="solucoes.html">Soluções</a> |
+            <a href="contato.html">Contato</a>
+        </nav>
     </header>
-    <section>
-        <p style="text-align: center; padding: 20px;">
-            Bem-vindo à página de carreiras da Kalipeiro! Estamos em busca de talentos excepcionais para se juntar a nós em nossa jornada para criar o maior monopólio de mídia. Na Kalipeiro, você terá a oportunidade de trabalhar com uma equipe inovadora e dedicada, onde suas ideias e habilidades serão valorizadas. Junte-se a nós e ajude a moldar o futuro da mídia!
-        </p>
-    </section>
-    <nav>
-        <ul>
-            <li class="expandable">Design e Criação
-                <ul>
-                    <li class="position-expandable">Designer Gráfico
-                        <div class="description">
-                            Responsável pela criação de materiais visuais, incluindo logotipos, banners e flyers. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Designer%20Gr%C3%A1fico">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Web Designer
-                        <div class="description">
-                            Criação e manutenção de websites atraentes e funcionais. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Web%20Designer">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Designer de Produtos
-                        <div class="description">
-                            Desenvolvimento de designs inovadores para produtos físicos e digitais. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Designer%20de%20Produtos">Envie seu currículo</a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="expandable">Produção e Impressão
-                <ul>
-                    <li class="position-expandable">Especialista em Impressão
-                        <div class="description">
-                            Gerenciamento de processos de impressão e produção de materiais promocionais. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Especialista%20em%20Impress%C3%A3o">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Técnico em Produção
-                        <div class="description">
-                            Suporte técnico para a produção de produtos e materiais impressos. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20T%C3%A9cnico%20em%20Produ%C3%A7%C3%A3o">Envie seu currículo</a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="expandable">Fotografia e Vídeo
-                <ul>
-                    <li class="position-expandable">Fotógrafo
-                        <div class="description">
-                            Responsável por sessões fotográficas de produtos e ambientes. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Fot%C3%B3grafo">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Videomaker
-                        <div class="description">
-                            Criação de vídeos publicitários e institucionais. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Videomaker">Envie seu currículo</a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="expandable">Publicidade Digital e Tradicional
-                <ul>
-                    <li class="position-expandable">Especialista em Google Ads
-                        <div class="description">
-                            Planejamento e gestão de campanhas publicitárias no Google Ads. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Especialista%20em%20Google%20Ads">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Especialista em Facebook Ads
-                        <div class="description">
-                            Criação e gestão de campanhas publicitárias no Facebook Ads. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Especialista%20em%20Facebook%20Ads">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Consultor de Mídia OOH
-                        <div class="description">
-                            Gestão de campanhas publicitárias em mídia externa. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Consultor%20de%20M%C3%ADdia%20OOH">Envie seu currículo</a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="expandable">Desenvolvimento e Tecnologia
-                <ul>
-                    <li class="position-expandable">Desenvolvedor Web
-                        <div class="description">
-                            Criação e manutenção de aplicações web responsivas e eficientes. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Desenvolvedor%20Web">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Desenvolvedor de Apps iOS
-                        <div class="description">
-                            Desenvolvimento de aplicativos para dispositivos iOS. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Desenvolvedor%20de%20Apps%20iOS">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Desenvolvedor de Apps Android
-                        <div class="description">
-                            Desenvolvimento de aplicativos para dispositivos Android. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Desenvolvedor%20de%20Apps%20Android">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Engenheiro de Software
-                        <div class="description">
-                            Desenvolvimento e manutenção de sistemas de software complexos. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Engenheiro%20de%20Software">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Administrador de Sistemas
-                        <div class="description">
-                            Manutenção e administração de servidores e sistemas de TI. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Administrador%20de%20Sistemas">Envie seu currículo</a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="expandable">Consultoria e Gestão
-                <ul>
-                    <li class="position-expandable">Consultor de Negócios
-                        <div class="description">
-                            Fornecimento de consultoria estratégica para negócios. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Consultor%20de%20Neg%C3%B3cios">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Gerente de Projetos
-                        <div class="description">
-                            Gestão e coordenação de projetos empresariais. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Gerente%20de%20Projetos">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Especialista em Marketing
-                        <div class="description">
-                            Desenvolvimento e implementação de estratégias de marketing. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Especialista%20em%20Marketing">Envie seu currículo</a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="expandable">Pesquisa e Análise de Dados
-                <ul>
-                    <li class="position-expandable">Analista de Dados
-                        <div class="description">
-                            Coleta, análise e interpretação de dados para apoio à tomada de decisões. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Analista%20de%20Dados">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Pesquisador de Mercado
-                        <div class="description">
-                            Condução de pesquisas de mercado para insights empresariais. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Pesquisador%20de%20Mercado">Envie seu currículo</a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="expandable">Logística e Distribuição
-                <ul>
-                    <li class="position-expandable">Gerente de Logística
-                        <div class="description">
-                            Planejamento e coordenação de atividades logísticas e de distribuição. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Gerente%20de%20Log%C3%ADstica">Envie seu currículo</a>
-                        </div>
-                    </li>
-                    <li class="position-expandable">Especialista em E-commerce Fulfillment
-                        <div class="description">
-                            Gestão de operações de fulfillment para lojas de e-commerce. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Especialista%20em%20E-commerce%20Fulfillment">Envie seu currículo</a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="expandable">Educação e Treinamento
-                <ul>
-                    <li class="position-expandable">Instrutor de Workshops
-                        <div class="description">
-                            Condução de workshops e treinamentos para clientes e equipe interna. <br>
-                            <a href="mailto:kalipeiro@outlook.com?subject=Vaga%20Instrutor%20de%20Workshops">Envie seu currículo</a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <footer>
-        <p>Contato: kalipeiro@outlook.com</p>
-    </footer>
-    <script>
-        document.querySelectorAll('.expandable').forEach(function(item) {
-            item.addEventListener('click', function() {
-                this.classList.toggle('expanded');
-                var submenu = this.querySelector('ul');
-                if (submenu) {
-                    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-                }
-            });
-        });
+    <div class="container">
+        <div class="subtitle">Carreira</div>
+        <p>Estamos à procura de talentos apaixonados para se juntar à nossa equipe e nos ajudar a transformar o mundo da mídia. Veja abaixo as vagas disponíveis e envie seu currículo para <a href="mailto:kalipeiro@outlook.com" class="email-link">kalipeiro@outlook.com</a> com o nome da vaga no assunto.</p>
 
-        document.querySelectorAll('.position-expandable').forEach(function(item) {
-            item.addEventListener('click', function() {
-                this.classList.toggle('expanded');
-                var description = this.querySelector('.description');
-                if (description) {
-                    description.style.display = description.style.display === 'block' ? 'none' : 'block';
-                }
-            });
-        });
-    </script>
+        <div class="category">> Design e Criação</div>
+        <div class="job">> Designer Gráfico - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Designer Gráfico" class="email-link">Enviar Currículo</a></div>
+        <div class="job">> Diretor de Arte - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Diretor de Arte" class="email-link">Enviar Currículo</a></div>
+        <div class="job">> Ilustrador - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Ilustrador" class="email-link">Enviar Currículo</a></div>
+
+        <div class="category">> Produção e Impressão</div>
+        <div class="job">> Especialista em Impressão - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Especialista em Impressão" class="email-link">Enviar Currículo</a></div>
+        <div class="job">> Técnico em Produção - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Técnico em Produção" class="email-link">Enviar Currículo</a></div>
+
+        <div class="category">> Fotografia e Vídeo</div>
+        <div class="job">> Fotógrafo de Produto - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Fotógrafo de Produto" class="email-link">Enviar Currículo</a></div>
+        <div class="job">> Videomaker - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Videomaker" class="email-link">Enviar Currículo</a></div>
+        <div class="job">> Editor de Vídeo - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Editor de Vídeo" class="email-link">Enviar Currículo</a></div>
+
+        <div class="category">> Consultoria e Gestão</div>
+        <div class="job">> Consultor de Marketing - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Consultor de Marketing" class="email-link">Enviar Currículo</a></div>
+        <div class="job">> Gerente de Projetos - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Gerente de Projetos" class="email-link">Enviar Currículo</a></div>
+        <div class="job">> Analista de Dados - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Analista de Dados" class="email-link">Enviar Currículo</a></div>
+
+        <div class="category">> Soluções Digitais</div>
+        <div class="job">> Desenvolvedor Web - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Desenvolvedor Web" class="email-link">Enviar Currículo</a></div>
+        <div class="job">> Desenvolvedor de Aplicativos - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Desenvolvedor de Aplicativos" class="email-link">Enviar Currículo</a></div>
+        <div class="job">> Especialista em SEO - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Especialista em SEO" class="email-link">Enviar Currículo</a></div>
+
+        <div class="category">> Suporte e Ferramentas</div>
+        <div class="job">> Técnico de Suporte - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Técnico de Suporte" class="email-link">Enviar Currículo</a></div>
+        <div class="job">> Especialista em TI - <a href="mailto:kalipeiro@outlook.com?subject=Vaga: Especialista em TI" class="email-link">Enviar Currículo</a></div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Kalipeiro. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
