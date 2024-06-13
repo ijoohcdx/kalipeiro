@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalipeiro</title>
+    <title>Kalipeiro - Soluções</title>
     <style>
         body {
             font-family: "Courier New", Monospace;
@@ -19,52 +19,47 @@
         }
         header h1 {
             color: #ff0; /* Amarelo */
+            font-size: 36px;
+            margin-bottom: 10px;
         }
-        header h2 {
-            color: #fff;
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 10px 0;
-            cursor: pointer;
-            color: #fff;
-        }
-        nav ul li.red {
-            color: red;
-        }
-        nav ul ul {
-            display: none;
-            margin-left: 20px;
-        }
-        nav ul ul li:before {
-            content: "├── ";
-        }
-        a {
+        nav a {
             color: #fff;
             text-decoration: none;
+            margin: 0 10px;
         }
-        a:hover {
+        nav a:hover {
             text-decoration: underline;
         }
-        footer {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .footer {
             text-align: center;
             padding: 20px;
             background-color: #333;
             margin-top: 20px;
+            font-size: 14px;
         }
-        .expandable:before, .service-expandable:before {
-            content: ">";
-            margin-right: 5px;
+        .category {
+            color: #ff0000; /* Vermelho */
+            font-weight: bold;
+            margin-top: 20px;
         }
-        .expanded:before {
-            content: "v";
-            margin-right: 5px;
+        .service {
+            margin-left: 20px;
         }
-        .description {
-            display: none;
+        .subservice {
             margin-left: 40px;
         }
     </style>
@@ -72,275 +67,71 @@
 <body>
     <header>
         <h1>Kalipeiro</h1>
-        <h2>Soluções</h2>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="carreira.html">Carreira</a> |
+            <a href="contato.html">Contato</a>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li class="red expandable">Design e Criação
-                <ul>
-                    <li class="expandable">Identidade Visual
-                        <ul>
-                            <li class="service-expandable">Logo Design
-                                <div class="description">Criação de logotipos personalizados para empresas e marcas.</div>
-                            </li>
-                            <li class="service-expandable">Design de Avatar
-                                <div class="description">Desenvolvimento de avatares digitais para perfis e representações online.</div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="expandable">Materiais Impressos
-                        <ul>
-                            <li class="service-expandable">Design de Cartão de Visitas
-                                <div class="description">Criação de cartões de visita profissionais e personalizados.</div>
-                            </li>
-                            <li class="service-expandable">Design de Arte para Flyer
-                                <div class="description">Desenvolvimento de flyers promocionais e informativos.</div>
-                            </li>
-                            <li class="service-expandable">Menu para Restaurantes (1 a 10 páginas)
-                                <div class="description">Design de menus personalizados para restaurantes com até 10 páginas.</div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="expandable">Materiais Digitais
-                        <ul>
-                            <li class="service-expandable">Design de Capa de Livros para Amazon
-                                <div class="description">Criação de capas de livros atraentes para publicação na Amazon.</div>
-                            </li>
-                            <li class="service-expandable">Design Microsite Linktree
-                                <div class="description">Desenvolvimento de microsites para agregação de links em plataformas sociais.</div>
-                            </li>
-                            <li class="service-expandable">Shopify Ecommerce Design
-                                <div class="description">Design e configuração de lojas virtuais na plataforma Shopify.</div>
-                            </li>
-                            <li class="service-expandable">WordPress Website Design
-                                <div class="description">Criação de websites personalizados utilizando a plataforma WordPress.</div>
-                            </li>
-                            <li class="service-expandable"><a href="https://www.kalipeiro.online/">Kalipeiro Online: Menu Digital via QR Code</a>
-                                <div class="description">Implementação de menus digitais para restaurantes acessíveis via QR Code.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="red expandable">Produção e Impressão
-                <ul>
-                    <li class="expandable">Produtos Promocionais
-                        <ul>
-                            <li class="service-expandable">Impressão de Logo em Pratos e Louças
-                                <div class="description">Personalização de pratos e louças com logotipos.</div>
-                            </li>
-                            <li class="service-expandable">Impressão de Capas de Telefone
-                                <div class="description">Produção de capas de telefone personalizadas com design exclusivo.</div>
-                            </li>
-                            <li class="service-expandable">Impressão de Camisetas
-                                <div class="description">Impressão de camisetas promocionais com designs personalizados.</div>
-                            </li>
-                            <li class="service-expandable">Canetas e Lápis Promocionais
-                                <div class="description">Produção de canetas e lápis promocionais com branding personalizado.</div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="expandable">Material Publicitário
-                        <ul>
-                            <li class="service-expandable">Storefront Outdoor Logo/Name
-                                <div class="description">Criação de logos e nomes para fachadas comerciais externas.</div>
-                            </li>
-                            <li class="service-expandable">Banner em Vinil 2m x 1.5m
-                                <div class="description">Produção de banners em vinil para publicidade e eventos.</div>
-                            </li>
-                            <li class="service-expandable">Sticker/Adesivo para Notebook
-                                <div class="description">Produção de adesivos personalizados para notebooks.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="red expandable">Fotografia e Vídeo
-                <ul>
-                    <li class="expandable">Fotografia Comercial
-                        <ul>
-                            <li class="service-expandable">Fotografia de Produto
-                                <div class="description">Sessões fotográficas profissionais para produtos comerciais.</div>
-                            </li>
-                            <li class="service-expandable">Fotografia para Airbnb e Hotéis
-                                <div class="description">Fotografia profissional para anúncios em Airbnb e Booking.</div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="expandable">Produção de Vídeo
-                        <ul>
-                            <li class="service-expandable">Anúncio em Vídeo para TikTok
-                                <div class="description">Criação de vídeos publicitários otimizados para o TikTok.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="red expandable">Publicidade Digital e Tradicional
-                <ul>
-                    <li class="expandable">Campanhas Online
-                        <ul>
-                            <li class="service-expandable">Anúncios para Airbnb e Booking
-                                <div class="description">Desenvolvimento de anúncios eficazes para Airbnb e Booking.</div>
-                            </li>
-                            <li class="service-expandable">Anúncios para Meta Plataformas
-                                <div class="description">Criação e gerenciamento de anúncios em plataformas Meta.</div>
-                            </li>
-                            <li class="service-expandable">Impulsionamento no TikTok
-                                <div class="description">Serviço de impulsionamento de publicações no TikTok.</div>
-                            </li>
-                            <li class="service-expandable">Google Ads
-                                <div class="description">Gestão de campanhas publicitárias no Google Ads.</div>
-                            </li>
-                            <li class="service-expandable">Facebook Ads
-                                <div class="description">Criação e gestão de campanhas publicitárias no Facebook Ads.</div>
-                            </li>
-                            <li class="service-expandable">LinkedIn Ads
-                                <div class="description">Desenvolvimento de anúncios direcionados no LinkedIn.</div>
-                            </li>
-                            <li class="service-expandable">Campanhas de Instagram
-                                <div class="description">Planejamento e execução de campanhas publicitárias no Instagram.</div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="expandable">Publicidade Offline
-                        <ul>
-                            <li class="service-expandable">Mídia OOH (Out of Home)
-                                <div class="description">Publicidade em mídias externas como outdoors e transporte público.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="red expandable">Desenvolvimento e Tecnologia
-                <ul>
-                    <li class="expandable">Desenvolvimento Web
-                        <ul>
-                            <li class="service-expandable">Desenvolvimento de Webapps
-                                <div class="description">Criação de aplicações web personalizadas e responsivas.</div>
-                            </li>
-                            <li class="service-expandable">iOS App Development
-                                <div class="description">Desenvolvimento de aplicativos para dispositivos iOS.</div>
-                            </li>
-                            <li class="service-expandable">Android App Development
-                                <div class="description">Desenvolvimento de aplicativos para dispositivos Android.</div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="expandable">Sistemas de Comunicação
-                        <ul>
-                            <li class="service-expandable">Whatsapp Chatbot System
-                                <div class="description">Implementação de sistemas de chatbot para WhatsApp.</div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="expandable">Serviços de TI
-                        <ul>
-                            <li class="service-expandable">Atualização para Windows 11
-                                <div class="description">Serviço de atualização de sistemas operacionais para Windows 11.</div>
-                            </li>
-                            <li class="service-expandable">Instalação Ubuntu
-                                <div class="description">Serviço de instalação e configuração do sistema operacional Ubuntu.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="red expandable">Consultoria e Gestão
-                <ul>
-                    <li class="expandable">Consultoria de Negócios
-                        <ul>
-                            <li class="service-expandable">Consultoria para Restaurantes
-                                <div class="description">Serviços de consultoria especializada para restaurantes.</div>
-                            </li>
-                            <li class="service-expandable">Gerenciamento de Ideias de Marketing
-                                <div class="description">Serviços de gestão e desenvolvimento de ideias de marketing.</div>
-                            </li>
-                            <li class="service-expandable">Gerenciamento de Inventário/Estoque
-                                <div class="description">Gestão eficiente de inventário e controle de estoque.</div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="expandable">Soluções de Pagamento
-                        <ul>
-                            <li class="service-expandable">Cartão de Visita com QR Code Pix
-                                <div class="description">Criação de cartões de visita com QR Code para pagamentos via Pix.</div>
-                            </li>
-                            <li class="service-expandable">Implementação no iFood
-                                <div class="description">Serviço de implementação e gestão de cardápios no iFood.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="red expandable">Pesquisa e Análise de Dados
-                <ul>
-                    <li class="expandable">Pesquisa de Mercado
-                        <ul>
-                            <li class="service-expandable">Serviços de Pesquisa de Mercado
-                                <div class="description">Condução de pesquisas de mercado para insights empresariais.</div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="expandable">Análise de Dados
-                        <ul>
-                            <li class="service-expandable">Análise de Dados e Relatórios
-                                <div class="description">Serviços de análise de dados e geração de relatórios detalhados.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="red expandable">Logística e Distribuição
-                <ul>
-                    <li class="expandable">Gestão de Materiais
-                        <ul>
-                            <li class="service-expandable">Serviços de Logística para Materiais Promocionais
-                                <div class="description">Logística e distribuição de materiais promocionais.</div>
-                            </li>
-                            <li class="service-expandable">E-commerce Fulfillment
-                                <div class="description">Serviços de fulfillment para lojas de e-commerce.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="red expandable">Educação e Treinamento
-                <ul>
-                    <li class="expandable">Capacitação
-                        <ul>
-                            <li class="service-expandable">Workshops e Treinamentos para Clientes
-                                <div class="description">Oferecimento de workshops e treinamentos especializados para clientes.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <footer>
-        <p>Contato: kalipeiro@outlook.com</p>
-    </footer>
-    <script>
-        document.querySelectorAll('.expandable').forEach(function(item) {
-            item.addEventListener('click', function() {
-                this.classList.toggle('expanded');
-                var submenu = this.querySelector('ul');
-                if (submenu) {
-                    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-                }
-            });
-        });
+    <div class="container">
+        <div class="subtitle">Soluções</div>
+        <div class="category">> Design e Criação</div>
+        <div class="service">> Logo Design</div>
+        <div class="service">> Design de Cartão de Visitas</div>
+        <div class="service">> Design de Capa de Livros para Amazon</div>
+        <div class="service">> Design de Embalagem e Rótulo</div>
+        <div class="service">> Design de Placas "Não Fume"</div>
+        <div class="service">> Design de Avatar</div>
 
-        document.querySelectorAll('.service-expandable').forEach(function(item) {
-            item.addEventListener('click', function() {
-                this.classList.toggle('expanded');
-                var description = this.querySelector('.description');
-                if (description) {
-                    description.style.display = description.style.display === 'block' ? 'none' : 'block';
-                }
-            });
-        });
-    </script>
+        <div class="category">> Produção e Impressão</div>
+        <div class="service">> Impressão de Logo em Pratos e Louças</div>
+        <div class="service">> Impressão de Capas de Telefone</div>
+        <div class="service">> Impressão de Camisetas</div>
+        <div class="service">> Storefront Outdoor Logo/Name</div>
+        <div class="service">> Banner em Vinil 2m x 1.5m</div>
+        <div class="service">> Sticker/Adesivo para Notebook</div>
+        <div class="service">> Canetas e Lápis Promocionais</div>
+
+        <div class="category">> Fotografia e Vídeo</div>
+        <div class="service">> Fotografia de Produto</div>
+        <div class="service">> Fotografia para Airbnb e Hotéis</div>
+        <div class="service">> Anúncios para Airbnb e Booking</div>
+        <div class="service">> Anúncios para Meta Plataformas</div>
+        <div class="service">> Anúncio em Vídeo para TikTok</div>
+        <div class="service">> Impulsionamento no TikTok</div>
+        <div class="service">> Mídia OOH</div>
+
+        <div class="category">> Consultoria e Gestão</div>
+        <div class="service">> Consultoria para Restaurantes</div>
+        <div class="service">> Gerenciamento de Ideias de Marketing</div>
+        <div class="service">> Gerenciamento de Inventário/Estoque</div>
+
+        <div class="category">> Soluções Digitais</div>
+        <div class="service">> Cartão de Visita com QR Code Pix</div>
+        <div class="service">> Shopify Ecommerce Design</div>
+        <div class="service">> WordPress Website Design</div>
+        <div class="service">> Menu Digital via QR Code</div>
+        <div class="service">> Implementação no iFood</div>
+        <div class="service">> Design Microsite Linktree</div>
+        <div class="service">> Campanhas de Instagram</div>
+        <div class="service">> Desenvolvimento de Webapps</div>
+        <div class="service">> iOS App Development</div>
+        <div class="service">> Android App Development</div>
+        <div class="service">> Google Ads</div>
+        <div class="service">> Facebook Ads</div>
+        <div class="service">> LinkedIn Ads</div>
+        <div class="service">> Whatsapp Chatbot System</div>
+        <div class="service">> Menu para Restaurantes (1 a 10 páginas)</div>
+        <div class="service">> Design de Arte para Flyer</div>
+
+        <div class="category">> Suporte e Ferramentas</div>
+        <div class="service">> Planilhas: Orçamento, Contabilidade, Marketing, Financiamento</div>
+        <div class="service">> Canva Modelo de Plano de Negócio</div>
+        <div class="service">> Atualização para Windows 11</div>
+        <div class="service">> Instalação Ubuntu</div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Kalipeiro. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
